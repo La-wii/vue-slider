@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- collegamento css -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- cdn Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- cdn Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <!-- collegamento css -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Slider</title>
 </head>
 
 <body>
 
-    <div id="app">
-        
+    <!-- start #app -->
+    <div id="app" class="container">
+        <!-- start slider-wrapper -->
+        <div class="slider-wrapper">
+
+            <!-- start prev -->
+            <div class="prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <!-- end prev -->
+
+            <!-- start images -->
+            <div class="images">
+                <img src="img/1.jpg" alt="">
+
+            </div>
+            <!-- end images-->
+
+            <!-- start next -->
+            <div class="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <!-- end next -->
+
+            <!-- start nav -->
+            <div class="nav">
+                <i class="fas fa-circle active"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+            <!-- end nav -->
+
+        </div>
+        <!-- end slider-wrapper -->
     </div>
+    <!-- end #app -->
 
     <!-- collegamento js -->
     <script src="js/script.js"></script>
