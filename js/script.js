@@ -22,7 +22,7 @@ const app = new Vue ({
             this.counter = index;
         }
             
-    },
+    }
     
 });
 
