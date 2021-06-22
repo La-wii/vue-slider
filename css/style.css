@@ -40,4 +40,6 @@
 
 .nav i.active{
     color: black;
+    border: 2px solid yellow;
+    border-radius: 50%;
 } 
