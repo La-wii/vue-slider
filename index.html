@@ -42,7 +42,7 @@
             <!-- start nav -->
             <div class="nav">
                 <i :class="(index == counter) ? 'active' : '' " class="fas fa-circle"
-                v-for="(item, index) in photos"></i>
+                v-for="(item, index) in photos" @click="changePhoto(index)"></i>
                 <!-- <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i> -->
