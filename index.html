@@ -21,30 +21,32 @@
         <div class="slider-wrapper">
 
             <!-- start prev -->
-            <div class="prev">
+            <div class="prev" @click='nextPhoto'>
                 <i class="fas fa-chevron-left"></i>
             </div>
             <!-- end prev -->
 
             <!-- start images -->
             <div class="images">
-                <img src="img/1.jpg" alt="">
+                <img :src="photos[counter]">
 
             </div>
             <!-- end images-->
 
             <!-- start next -->
-            <div class="next">
+            <div class="next" @click='nextPhoto'>
                 <i class="fas fa-chevron-right"></i>
             </div>
             <!-- end next -->
 
             <!-- start nav -->
             <div class="nav">
-                <i class="fas fa-circle active"></i>
+                <i class="fas fa-circle"
+                v-for="all in photos"></i>
+                <!-- <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i> -->
+                
             </div>
             <!-- end nav -->
 
