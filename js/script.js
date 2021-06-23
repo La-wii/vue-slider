@@ -21,8 +21,13 @@ const app = new Vue ({
         changePhoto(index){
             this.counter = index;
         }
-            
+   
+    },
+
+    mounted(){
+        setInterval(this.nextPhoto, 3000);
     }
     
 });
+
 
